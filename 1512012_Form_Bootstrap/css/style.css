@@ -1,0 +1,75 @@
+html, body{
+    background-image: url(./../images/3.jpeg);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;  
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h3{
+    border-bottom: 1px solid rgba(0, 128, 0, 0.3); 
+}
+
+div{
+    margin:0;
+    padding:0;
+}
+
+.headerForm{
+    
+    width: 100%;
+    margin: 0;
+    background-color: aquamarine;
+}
+
+.container{
+    border-style: solid;
+    border-color: green;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+input[type="text"],select{
+    display: inline-block;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    outline-color: green;
+}
+
+label {
+    width: 20%;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+input[name="membership"]{
+    margin: 100px;
+}
+
+button[type=button], button[type=reset] {
+    /*display: inline-block;*/
+    margin: 20px;
+    position: relative;
+    left: 150px;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+}
+    button[name="submitBtn"]{
+        background-color: forestgreen;
+        color: white;
+    }
+
+.required{
+    color: red;
+    font-weight: bold;
+}
+
+

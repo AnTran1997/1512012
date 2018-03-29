@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>1512012 - TRAN THIEN AN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="headerForm">1512012_Form</h2>
+        <h3 class="title">Person info</h3>
+        <div class="row">
+            <div class="col-sm-6 info">
+                <form name="firstNameForm" method="post">
+                    <label for="fName">First Name <span class="required">*</span></label>
+                    <input type="text" name="fName"><br>
+
+                    <label for="gender">Gender</label>
+                    <select>
+                        <option>Female</option>
+                        <option>Male</option>
+                    </select><br>
+
+                    <label for="category">Category</label>
+                    <select>
+                        <option value="category1">Category 1</option>
+                        <option value="category2">Category 2</option>
+                        <option value="category3">Category 3</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-sm-6 info">
+                <form name="lastNameForm" method="post">
+                    <label for="lName">Last Name <span class="required">*</span></label>
+                    <input type="text" name="lName"><br>
+
+                    <label for="birthDay">Date of birth <span class="required">*</span></label>
+                    <input type="text" name="birthDay" placeholder="dd/mm/yyyy"><br>
+
+                    <label for="membership">Membership</label>
+                    <input type="radio" name="membership" values="Free" checked>Free
+                    <input type="radio" name="membership" value="Pro">Professoinal
+                </form>
+
+            </div>
+        </div>
+        
+
+        <br>
+        <h3 class="title">Address</h3>
+        <div class="row">
+            <div class="col-sm-6 info">
+                <form>
+                    <label for="address1">Address 1</label>
+                    <input type="text" name="address1"><br>
+
+                    <label for="city1">City 1</label>
+                    <input type="text" name="city1"><br>
+
+                    <label for="postcode">Post Code</label>
+                    <input type="text" name="postcode"><br>
+
+                    <button type="button" name="submitBtn" onclick="submitForm()">Submit</button>
+                    <button type="reset" name="cancelBtn">Cancel</button>
+                </form>
+            </div>
+            <div class="col-sm-6 info">
+                <form>
+                    <label for="addresss2">Address 2</label>
+                    <input type="text" name="address2"><br>
+
+                    <label for="city2">City 2</label>
+                    <input type="text" name="city2"><br>
+
+                    <label for="country">country</label>
+                    <select name="country" id="">
+                        <option value="country">Viet Nam</option>
+                        <option value="country">Thailand</option>
+                        <option value="country">Japan</option>
+                        <option value="country">Korea</option>
+                    </select>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="./js/mainJS.js"></script>
+</body>
+</html>
